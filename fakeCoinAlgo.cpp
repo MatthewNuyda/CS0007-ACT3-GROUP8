@@ -188,13 +188,13 @@ void CoinPouch::addCoinToArr(vector<int>& arr, int n){
 
 void CoinPouch::displayAnswer(int w, int iter, int index){
     if(w >= 10){
-        cout << "NO! There are no fake coins in this coin pouch";
+        cout << "NO! There are no fake coins in this coin pouch\n";
         return;
     }
 
     cout << "YES!, The program terminated at iteration " << iter 
          << " and has found a fake coin at the index: " << index << endl
-         <<"\nThe fake coin has a weight of: " << w ;
+         <<"\nThe fake coin has a weight of: " << w << endl;
 }
 
 void ErrorManagement::numGatekeep(int& num){
@@ -236,5 +236,6 @@ int main() {
 
     pouch.displayAnswer(fakeWeight, iter, index);
     
+    system("pause");
     return 0;
 }
